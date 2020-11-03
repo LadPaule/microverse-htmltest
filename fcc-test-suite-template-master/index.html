@@ -28,12 +28,20 @@
     <p id="description">Thank you for taking the time to help us improve the platform</p>
     <form action="" id="survey-form">
       <label id="name-label" for="name">Name</label>
-      <input id="name" type="text" required><br><br>
+      <input id="name" type="text" placeholder="Enter your name" required><br><br>
       <label id="email-label" for="email">Email</label>
-      <input id="email" type="email" required>
-      <label for="number-label" id  = "number" required="true" min=10 max=12> Number</label>
-
-
+      <input id="email" type="email" name="email" placeholder="Enter your email" required><br><br>
+      <label id="number-label" for="number">Age</label>
+      <input id="number" type="number" min="12" max="70" placeholder="Enter your age" required><br> <br>
+      <div id=dropdown-div>
+        <p>Which option best describes your current role?</p>
+        <select id="dropdown">
+          <option value="Student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="job">Full Time Learner</option>
+          <option value="job">Prefer not to say</option>
+        </select>
+      </div>
 
     </form>
 
