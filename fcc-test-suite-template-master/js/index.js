@@ -26,3 +26,19 @@ INSTRUCTIONS:
 
 // Once you have read the above messages, you can delete all comments. 
 "use strict";
+  
+$(window).scroll(headerFade);
+
+function headerFade() {
+  if($(this).scrollTop() > 250) {
+    $('header').css({
+      'opacity': '0',
+      'transition': '1s',
+    })
+  } else {
+      $('header').css({
+        'opacity': '1',
+        'transition': '.7s',
+      })
+  }
+}
